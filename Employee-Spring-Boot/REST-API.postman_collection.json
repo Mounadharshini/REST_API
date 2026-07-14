@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "76889621-0960-45f9-b253-23b540db6531",
+    "name": "REST-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56581684",
+    "_collection_link": "https://go.postman.co/collection/56581684-76889621-0960-45f9-b253-23b540db6531?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get One",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Get All",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Create One",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Mounadharshini Vimalraj\",\r\n    \"email\": \"dhachumaa182@gmail.com\",\r\n    \"department\": \"Artificial Intelligence and Data Science\",\r\n    \"salary\": 1000000.00,\r\n    \"joinDate\": \"2026-07-14\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8088/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete One",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Mounadharshini V\",\r\n    \"email\": \"dhachumaa182@gmail.com\",\r\n    \"department\": \"Artificial Intelligence and Data Science\",\r\n    \"salary\": 1000000.00,\r\n    \"joinDate\": \"2026-07-14\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8088/api/employees/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "employees",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
